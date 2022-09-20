@@ -72,8 +72,10 @@ textarea {
 
 .col-1 {
   background-color: grey;
+  border: 1px solid #00000020;
 }
 
 .col-10 {
   background-color: beige;
+  border: 1px solid #00000020;
 }
