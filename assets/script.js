@@ -74,9 +74,9 @@ function displayColor() {
 //When user inputs text in box and clicks save, value is saved into local storage
 // var emailInput = document.querySelector("#email");
 
-var TimeBLock = document.querySelectorAll(
-  "#msg-9,#msg-10,#msg-11,#msg-12,#msg-13,#msg-14,#msg-15,#msg-16,#msg-17"
-);
+//var TimeBLock = document.querySelectorAll(
+//  "#msg-9,#msg-10,#msg-11,#msg-12,#msg-13,#msg-14,#msg-15,#msg-16,#msg-17"
+//);
 var Saves = $(".buttonSave");
 
 Saves.on("click", function (event) {
