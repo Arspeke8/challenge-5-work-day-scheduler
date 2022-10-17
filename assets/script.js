@@ -73,32 +73,11 @@ function displayColor() {
 //when it's after hours not 9-5 all times are in the past which is grey
 //When user inputs text in box and clicks save, value is saved into local storage
 // var emailInput = document.querySelector("#email");
+
 var TimeBLock = document.querySelectorAll(
   "#msg-9,#msg-10,#msg-11,#msg-12,#msg-13,#msg-14,#msg-15,#msg-16,#msg-17"
 );
 var Saves = $(".buttonSave");
-//var msgDiv = document.querySelector("#msg");
-//var userEmailSpan = document.querySelector("#user-email");
-//var userPasswordSpan = document.querySelector("#user-password");
-
-//renderLastRegistered();
-
-//function displayMessage(type, message) {
-//  msgDiv.textContent = message;
-// msgDiv.setAttribute("class", type);
-//}
-
-//function renderLastRegistered() {
-//var email = localStorage.getItem("email");
-//var password = localStorage.getItem("password");
-
-// if (!email || !password) {
-//  return;
-// }
-
-// userEmailSpan.textContent = email;
-//// userPasswordSpan.textContent = password;
-//}
 
 Saves.on("click", function (event) {
   event.preventDefault();
@@ -115,20 +94,8 @@ Saves.on("click", function (event) {
   var hour = btn.parent().prev().attr("id");
 
   localStorage.setItem(hour, Text);
-  //  var email = document.querySelector("#email").value;
-  // var password = document.querySelector("#password").value;
 
-  // if (email === "") {
-  //   displayMessage("error", "Email cannot be blank");
-  // } else if (password === "") {
-  //  displayMessage("error", "Password cannot be blank");
-  // } else {
-  //   displayMessage("success", "Registered successfully");
-
-  //  localStorage.setItem("email", email);
-  //   localStorage.setItem("password", password);
-  //   renderLastRegistered();
-  // }
+  //saves the value to local Storage
 });
 var Text = localStorage.getItem("msg-9");
 if (Text) $("#msg-9").text(Text);
