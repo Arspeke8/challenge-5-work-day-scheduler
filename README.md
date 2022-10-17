@@ -1,4 +1,4 @@
-# Work Day Scheduler Starter Code
+# Work Day Scheduler
 
 # Made with HTML, CSS, BootStrap, JQuery and JavaScript
 
